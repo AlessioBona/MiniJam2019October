@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ItemCollector : MonoBehaviour
 {
@@ -9,11 +7,11 @@ public class ItemCollector : MonoBehaviour
     {
         //check whether the item we collided with has an item component
         Item nextItem = collision.gameObject.GetComponent<Item>();
-        if(nextItem)
+        if (nextItem)
         {
             print(nextItem.GetItemType());
             //depending on the item type
-            switch(nextItem.GetItemType())
+            switch (nextItem.GetItemType())
             {
                 case Item.Type.clone:
                     break;
