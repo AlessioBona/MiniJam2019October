@@ -48,6 +48,7 @@ public class LevelSelector : MonoBehaviour
         {
             GameObject newButton = Instantiate(levelButtonPrefab, buttonsParent.transform);
             newButton.GetComponent<LevelSelectButton>().sceneName = scenesNames[i];
+            newButton.GetComponent<LevelSelectButton>().buttonLabel.text = $"{i + 1} - {scenesNames[i]}";
             newButton.GetComponentInChildren<Button>().onClick.AddListener(newButton.GetComponent<LevelSelectButton>().LoadTheScene);
             newButton.GetComponentInChildren<Button>().onClick.AddListener(CloseLevelSelect);
         }
