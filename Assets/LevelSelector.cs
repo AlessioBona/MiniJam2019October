@@ -2,17 +2,35 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class LevelSelector : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    [SerializeField]
+    GameObject LevelButtonPrefab;
+
+    [SerializeField]
+    List<string> scenesNames;
+    List<string> levelsNames;
+
+    private void Start()
     {
-        
+        DontDestroyOnLoad(this.gameObject);
+
+        if(scenesNames == null)
+        {
+            Debug.Log("There are no scene names");
+            scenesNames = new List<string>();
+        }
+        if(levelsNames == null)
+        {
+            Debug.Log("There are no level names");
+            levelsNames = new List<string>();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void UpdateLevelSelector()
     {
-        
+
     }
 }
