@@ -19,6 +19,25 @@ MonoBehaviour:
   - Name: Desktop
     Value: 764
   Exists: 1
+--- !u!114 &-7945219205862622416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master Bank.bank
+  m_EditorClassIdentifier: 
+  Path: C:\UnityActual\MiniJam2019October\FMOD\save 1\Build\Desktop\Master Bank.bank
+  lastModified: 637064933558256153
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 12474
+  Exists: 1
 --- !u!114 &-7675425702196727499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55,7 +74,7 @@ MonoBehaviour:
   m_Name: bank:/Master Bank.strings.bank
   m_EditorClassIdentifier: 
   Path: FMOD\save 1\Build\Desktop\Master Bank.strings.bank
-  lastModified: 637064921852498814
+  lastModified: 637064933558266189
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -218,16 +237,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -7235946569540530300}
-  - {fileID: 3532837544185919600}
-  - {fileID: 7616169038399434792}
+  - {fileID: 1336042657223441500}
+  - {fileID: -7945219205862622416}
   EditorEvents:
   - {fileID: 6016404763436668874}
   MasterBanks:
-  - {fileID: 7616169038399434792}
+  - {fileID: -7945219205862622416}
   StringsBanks:
   - {fileID: -7235946569540530300}
-  stringsBankWriteTime: 637064921852498814
+  stringsBankWriteTime: 637064933558266189
   cacheVersion: 3
+--- !u!114 &1336042657223441500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Scene1.bank
+  m_EditorClassIdentifier: 
+  Path: C:\UnityActual\MiniJam2019October\FMOD\save 1\Build\Desktop\Scene1.bank
+  lastModified: 637064933558306014
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1106
+  Exists: 1
 --- !u!114 &1516995579183276780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,7 +304,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 1106
-  Exists: 1
+  Exists: 0
 --- !u!114 &6016404763436668874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,7 +320,7 @@ MonoBehaviour:
   Path: event:/Music
   guid: a8bdab3ad27ef94db34021ce4b953105
   Banks:
-  - {fileID: 3532837544185919600}
+  - {fileID: 1336042657223441500}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -309,7 +347,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 12474
-  Exists: 1
+  Exists: 0
 --- !u!114 &8453899136283505680
 MonoBehaviour:
   m_ObjectHideFlags: 0
