@@ -52,6 +52,11 @@ public class Clone : MonoBehaviour
         enterTriggerManager.onTriggerExit += DoOnTriggerExit;
     }
 
+    private void OnEnable()
+    {
+        CloneList.Instance.AddClone(thisTransform);
+    }
+
     private void Update()
     {
         CheckButtonInput();
@@ -115,5 +120,10 @@ public class Clone : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void OnDisable()
+    {
+        CloneList.Instance.RemoveClone(thisTransform);
     }
 }
