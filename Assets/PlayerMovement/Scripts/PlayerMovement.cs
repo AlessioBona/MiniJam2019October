@@ -9,9 +9,11 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D _rigidbody;
     private Vector2 moveVector;
     [SerializeField] private float moveSpeed = 1;
+    public void UpdateSpeed (float value) { moveSpeed += value; }
     private float playerVelocity;
 
     [SerializeField] private float jumpForce;
+    public void UpdateJumpForce (float value) { jumpForce += value; }
 
     [SerializeField] private GroundCheck groundCheck;
 

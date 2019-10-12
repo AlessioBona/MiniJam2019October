@@ -2,6 +2,13 @@
 
 public class ItemCollector : MonoBehaviour
 {
+    PlayerMovement playerMvt;
+
+    private void Start()
+    {
+        playerMvt = GetComponent<PlayerMovement>();
+    }
+
     //everytime we're colliding with a trigger collider
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -14,6 +21,14 @@ public class ItemCollector : MonoBehaviour
             switch (nextItem.GetItemType())
             {
                 case Item.Type.clone:
+                    break;
+
+                case Item.Type.speedUp:
+                    playerMvt.UpdateSpeed(nextItem.GetValue());
+                    break;
+
+                case Item.Type.jumpBuff:
+                    playerMvt.UpdateJumpForce(nextItem.GetValue());
                     break;
             }
 
