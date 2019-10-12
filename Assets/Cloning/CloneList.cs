@@ -1,11 +1,17 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class CloneList : MonoBehaviour
 {
     [SerializeField] public static CloneList Instance;
 
-    [SerializeField] private List<Transform> cloneTransfromList = new List<Transform>();
+    [SerializeField] private List<Transform> cloneTransfromListX = new List<Transform>();
+    [SerializeField] private List<Transform> cloneTransfromListY = new List<Transform>();
+
+    public List<Transform> CloneTransfromListX { get => cloneTransfromListX; set => cloneTransfromListX = value; }
+    public List<Transform> CloneTransfromListY { get => cloneTransfromListY; set => cloneTransfromListY = value; }
 
     private void Awake()
     {
@@ -14,11 +20,23 @@ public class CloneList : MonoBehaviour
 
     public void AddClone(Transform _transform)
     {
-        cloneTransfromList.Add(_transform);
+        CloneTransfromListX.Add(_transform);
+        CloneTransfromListY.Add(_transform);
+
+        SortedList();
     }
 
     public void RemoveClone(Transform _transform)
     {
-        cloneTransfromList.Remove(_transform);
+        CloneTransfromListX.Remove(_transform);
+        CloneTransfromListY.Remove(_transform);
+
+        SortedList();
+    }
+
+    private void SortedList()
+    {
+        cloneTransfromListX.OrderBy(x => x.position.x);
+        cloneTransfromListY.OrderBy(x => x.position.y);
     }
 }
