@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3580541132295968066}
   - component: {fileID: 1260442896897508923}
   - component: {fileID: 7976708560345935332}
+  - component: {fileID: 1425341255}
   m_Layer: 0
   m_Name: PlayerClone
   m_TagString: Untagged
@@ -49,10 +50,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisTransform: {fileID: 8453531373103713927}
-  thisGameObject: {fileID: 8453531373103713926}
+  thisRigidbody2D: {fileID: 3580541132295968066}
+  collider2D: {fileID: 7976708560345935332}
   clonePrefab: {fileID: 8453531373103713928}
   spawnCloneCoolDown: 1
   dnaCount: 0
+  enterTriggerManager: {fileID: 1425341255}
+  clonesInRadius: 0
+  cloneCheckRadius: 0
+  isFirstPlayer: 0
+  isDisabled: 0
 --- !u!114 &70275043638299169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,6 +72,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7be67be0d0bbb34896b8c81124f4bee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enterTriggerManager: {fileID: 1425341255}
   clone: {fileID: 8453531373103713928}
 --- !u!212 &8453531373103713929
 SpriteRenderer:
@@ -123,7 +131,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8453531373103713926}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -159,7 +167,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8453531373103713926}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -178,3 +186,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14, y: 0.14}
   m_EdgeRadius: 0
+--- !u!114 &1425341255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8453531373103713926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ce0159ee23bdf746bec404fdd7e2f0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
