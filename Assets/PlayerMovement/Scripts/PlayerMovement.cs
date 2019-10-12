@@ -6,8 +6,14 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D _rigidbody;
     private Vector2 moveVector;
-    [SerializeField] private float moveSpeed;
+    [SerializeField] private float moveSpeed = 1;
     private float playerVelocity;
+
+    [SerializeField] private float jumpForce;
+
+    [SerializeField] private GroundCheck groundCheck;
+
+    
 
     void Start()
     {
@@ -23,6 +29,17 @@ public class PlayerMovement : MonoBehaviour
 
         this._rigidbody.velocity = moveVector;
 
+        if (Input.GetKeyDown(KeyCode.Space) && groundCheck.canJump)
+        {
+            this._rigidbody.velocity += new Vector2(0f, jumpForce);
+            //groundCheck.canJump = false;
+        }
+
+        //check if there is contact with the platform
+
+    
+
 
     }
+    
 }
