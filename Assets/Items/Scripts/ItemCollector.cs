@@ -20,7 +20,7 @@ public class ItemCollector : MonoBehaviour
             //depending on the item type
             switch (nextItem.GetItemType())
             {
-                case Item.Type.clone:
+                case Item.Type.dna:
                     break;
 
                 case Item.Type.speedUp:

@@ -5,9 +5,9 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
     //the type of the item
-    public enum Type { clone, speedUp, jumpBuff, invertMvt, trap }
+    public enum Type { dna, speedUp, jumpBuff, invertMvt, trap }
     [SerializeField]
-    private Type type = Type.clone;
+    private Type type = Type.dna;
     public Type GetItemType () { return type; }
 
     //the buff value, depending on the type of the item
