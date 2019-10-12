@@ -26,7 +26,7 @@ public class CameraFollow : MonoBehaviour
     private float startZ;
 
     [SerializeField] private float[] zoomSteps;
-    [SerializeField] private float[] distanceSteps;
+    [SerializeField] private float[] distanceSteps = new float[0];
 
     private float curDistance;
 
