@@ -10,11 +10,21 @@ public class Door : MonoBehaviour
     private float closedHeight = 0.0f;
 
     private bool isOpen = false;
-    public void UpdateStatus (bool open) { isOpen = open; }
+    public void UpdateStatus (bool open) { isOpen = open;
+        if (isOpen)
+            GetComponent<AudioSource>().PlayOneShot(openAudio);
+        else
+            GetComponent<AudioSource>().PlayOneShot(closeAudio);
+    }
 
     private float mvtVelocity;
     [SerializeField]
     private float mvtSmoothTime = 0.3f;
+
+    [SerializeField]
+    private AudioClip openAudio = null;
+    [SerializeField]
+    private AudioClip closeAudio = null;
 
     private void FixedUpdate()
     {

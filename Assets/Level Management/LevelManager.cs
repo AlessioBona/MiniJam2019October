@@ -10,6 +10,15 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     private string mainMenuLevel = "";
 
+    [SerializeField]
+    private AudioSource mainAudioSource = null;
+    public static AudioSource MainAudioSource;
+
+    private void Start()
+    {
+        MainAudioSource = mainAudioSource;
+    }
+
     public void ReloadLevel ()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

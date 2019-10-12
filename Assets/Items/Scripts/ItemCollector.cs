@@ -39,6 +39,9 @@ public class ItemCollector : MonoBehaviour
                     break;
             }
 
+            //play item audio effect:
+            LevelManager.MainAudioSource.PlayOneShot(nextItem.GetAudioClip());
+
             if (nextItem.CanDestroy())
                 //destroy the item
                 Destroy(nextItem.gameObject);
