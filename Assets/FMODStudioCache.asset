@@ -42,25 +42,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &-7235946569540530300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master Bank.strings.bank
-  m_EditorClassIdentifier: 
-  Path: FMOD\save 1\Build\Desktop\Master Bank.strings.bank
-  lastModified: 637064921852498814
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 764
-  Exists: 1
 --- !u!114 &-5990558891200816957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102,6 +83,26 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 1106
+  Exists: 1
+--- !u!114 &-3352966781276172352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master Bank.bank
+  m_EditorClassIdentifier: 
+  Path: D:\Projekte\PhantomAlien\MiniJam2019October\FMOD\save 1\Build\Desktop\Master
+    Bank.bank
+  lastModified: 637064921311226025
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 12474
   Exists: 1
 --- !u!114 &-2170472291126066988
 MonoBehaviour:
@@ -184,6 +185,48 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1106
   Exists: 1
+--- !u!114 &-736804875831385521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music
+  guid: a8bdab3ad27ef94db34021ce4b953105
+  Banks:
+  - {fileID: 6977300146560239098}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-178314643484637261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master Bank.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD\save 1\Build\Desktop\Master Bank.strings.bank
+  lastModified: 637064921311236019
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 764
+  Exists: 1
 --- !u!114 &-61183880826071831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,16 +260,16 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -7235946569540530300}
-  - {fileID: 3532837544185919600}
-  - {fileID: 7616169038399434792}
+  - {fileID: -178314643484637261}
+  - {fileID: 6977300146560239098}
+  - {fileID: -3352966781276172352}
   EditorEvents:
-  - {fileID: 6016404763436668874}
+  - {fileID: -736804875831385521}
   MasterBanks:
-  - {fileID: 7616169038399434792}
+  - {fileID: -3352966781276172352}
   StringsBanks:
-  - {fileID: -7235946569540530300}
-  stringsBankWriteTime: 637064921852498814
+  - {fileID: -178314643484637261}
+  stringsBankWriteTime: 637064921311236019
   cacheVersion: 3
 --- !u!114 &1516995579183276780
 MonoBehaviour:
@@ -248,7 +291,7 @@ MonoBehaviour:
   - Name: Desktop
     Value: 12474
   Exists: 1
---- !u!114 &3532837544185919600
+--- !u!114 &6977300146560239098
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -260,55 +303,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Scene1.bank
   m_EditorClassIdentifier: 
-  Path: C:\Users\GIMS PC\Documents\MiniJam2019October\FMOD\save 1\Build\Desktop\Scene1.bank
-  lastModified: 637064921852518773
+  Path: D:\Projekte\PhantomAlien\MiniJam2019October\FMOD\save 1\Build\Desktop\Scene1.bank
+  lastModified: 637064921311236019
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 1106
-  Exists: 1
---- !u!114 &6016404763436668874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music
-  m_EditorClassIdentifier: 
-  Path: event:/Music
-  guid: a8bdab3ad27ef94db34021ce4b953105
-  Banks:
-  - {fileID: 3532837544185919600}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &7616169038399434792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master Bank.bank
-  m_EditorClassIdentifier: 
-  Path: C:\Users\GIMS PC\Documents\MiniJam2019October\FMOD\save 1\Build\Desktop\Master
-    Bank.bank
-  lastModified: 637064921852488855
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 12474
   Exists: 1
 --- !u!114 &8453899136283505680
 MonoBehaviour:
