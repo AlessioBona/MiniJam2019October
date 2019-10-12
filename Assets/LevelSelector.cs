@@ -43,6 +43,16 @@ public class LevelSelector : MonoBehaviour
 
     public void UpdateLevelSelector()
     {
+        if(buttonsList != null)
+        {
+            if(buttonsList.Count > 0)
+            {
+                foreach (var button in buttonsList)
+                {
+                    Object.Destroy(button);
+                }
+            }
+        }
         buttonsList = new List<GameObject>();
         for (int i = 0; i < scenesNames.Count; i++)
         {

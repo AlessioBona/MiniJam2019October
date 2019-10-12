@@ -19,7 +19,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 12474
-  Exists: 1
+  Exists: 0
 --- !u!114 &-3991123305604124703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38,6 +38,25 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 1106
+  Exists: 0
+--- !u!114 &-3852442232050323928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master Bank.bank
+  m_EditorClassIdentifier: 
+  Path: C:\UnityActual\MiniJam2019October\FMOD\save 1\Build\Desktop\Master Bank.bank
+  lastModified: 637064933558256153
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 12474
   Exists: 1
 --- !u!114 &-1711252950971507318
 MonoBehaviour:
@@ -52,11 +71,30 @@ MonoBehaviour:
   m_Name: bank:/Master Bank.strings.bank
   m_EditorClassIdentifier: 
   Path: FMOD\save 1\Build\Desktop\Master Bank.strings.bank
-  lastModified: 637064921852498814
+  lastModified: 637064933558266189
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 764
+  Exists: 1
+--- !u!114 &-194814814420403707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Scene1.bank
+  m_EditorClassIdentifier: 
+  Path: C:\UnityActual\MiniJam2019October\FMOD\save 1\Build\Desktop\Scene1.bank
+  lastModified: 637064933558306014
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1106
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -72,15 +110,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -1711252950971507318}
-  - {fileID: -3991123305604124703}
-  - {fileID: -7348106580642921266}
+  - {fileID: -194814814420403707}
+  - {fileID: -3852442232050323928}
   EditorEvents:
   - {fileID: 3476168273821377825}
   MasterBanks:
-  - {fileID: -7348106580642921266}
+  - {fileID: -3852442232050323928}
   StringsBanks:
   - {fileID: -1711252950971507318}
-  stringsBankWriteTime: 637064921852498814
+  stringsBankWriteTime: 637064933558266189
   cacheVersion: 3
 --- !u!114 &3476168273821377825
 MonoBehaviour:
@@ -97,7 +135,7 @@ MonoBehaviour:
   Path: event:/Music
   guid: a8bdab3ad27ef94db34021ce4b953105
   Banks:
-  - {fileID: -3991123305604124703}
+  - {fileID: -194814814420403707}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
