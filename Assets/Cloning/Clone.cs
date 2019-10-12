@@ -84,7 +84,7 @@ public class Clone : MonoBehaviour
 
                 curClone = Instantiate(clonePrefab, thisTransform.position, thisTransform.rotation, null);
 
-                curClone.enabled = false;
+                curClone.enabled = true;
             }
         }
     }

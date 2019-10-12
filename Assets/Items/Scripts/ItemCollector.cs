@@ -16,7 +16,6 @@ public class ItemCollector : MonoBehaviour
         Item nextItem = collision.gameObject.GetComponent<Item>();
         if (nextItem)
         {
-            print(nextItem.GetItemType());
             //depending on the item type
             switch (nextItem.GetItemType())
             {
@@ -40,7 +39,7 @@ public class ItemCollector : MonoBehaviour
                     break;
             }
 
-            if(nextItem.CanDestroy())
+            if (nextItem.CanDestroy())
                 //destroy the item
                 Destroy(nextItem.gameObject);
         }
