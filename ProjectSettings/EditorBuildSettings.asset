@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/Level4/Level4.unity
     guid: 963be434204be77499e9a20e1e44f35f
+  - enabled: 1
+    path: Assets/EmptyScene.unity
+    guid: 0fd02abf6d83f9f4790bd4abd2faa7a1
   m_configObjects: {}

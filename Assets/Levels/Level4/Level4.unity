@@ -1853,7 +1853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetLevel: TestLevel
-  mainMenuLevel: SplashScene
+  mainMenuLevel: EmptyScene
 --- !u!4 &1962625583
 Transform:
   m_ObjectHideFlags: 0
@@ -2246,6 +2246,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5734361466037577774, guid: 1d026c8e7ff843c4a809c2c060452b60,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5784655624938558501, guid: 1d026c8e7ff843c4a809c2c060452b60, type: 3}
