@@ -51,7 +51,11 @@ public class Clone : MonoBehaviour
 
                 curClone = Instantiate(clonePrefab, thisTransform.position, thisTransform.rotation, null);
 
+<<<<<<< HEAD
+                curClone.enabled = true;
+=======
                 curClone.ThisGameObject.SetActive(false);
+>>>>>>> fe4561ce38f911a8914d114a7c1b78d101a667a8
             }
         }
     }
