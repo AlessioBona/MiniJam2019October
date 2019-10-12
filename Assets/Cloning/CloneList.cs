@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class CloneList : MonoBehaviour
 {
+    [SerializeField] private LevelManager levelManager = null;
     [SerializeField] public static CloneList Instance;
 
     [SerializeField] private List<Transform> cloneTransfromListX = new List<Transform>();
@@ -32,6 +33,9 @@ public class CloneList : MonoBehaviour
         //CloneTransfromListY.Remove(_transform);
 
         SortedList();
+
+        if (CloneTransfromListX.Count == 0) //no more clones in scene, reload
+            levelManager.ReloadLevel();
     }
 
     private void SortedList()

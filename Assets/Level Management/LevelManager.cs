@@ -7,6 +7,8 @@ public class LevelManager : MonoBehaviour
 {
     [SerializeField]
     private string targetLevel = "";
+    [SerializeField]
+    private string mainMenuLevel = "";
 
     public void ReloadLevel ()
     {
@@ -16,5 +18,11 @@ public class LevelManager : MonoBehaviour
     public void LoadTargetLevel ()
     {
         SceneManager.LoadScene(targetLevel);
+    }
+
+    public void LoadMainMenu ()
+    {
+        Doozy.Engine.GameEventMessage.SendEvent("QuitLevel");
+        SceneManager.LoadScene(mainMenuLevel);
     }
 }
