@@ -59,6 +59,9 @@ public class PlayerMovement : MonoBehaviour
         {
             case CloneState.dead:
                 velX = 0.0f;
+                GetComponent<Clone>().enabled = false;
+                GetComponent<ItemCollector>().enabled = false;
+                enabled = false;
                 break;
         }
     }

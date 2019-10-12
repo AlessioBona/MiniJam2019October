@@ -624,6 +624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1212187762}
+  thisTransform: {fileID: 951412946}
   cam: {fileID: 951412945}
   mvtSmoothTime: 0.3
 --- !u!1001 &984672088
@@ -1245,6 +1246,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1094543624962458054, guid: 6f5d276ea31c23d4f9eef3b43378078a,
+        type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 1962625582}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f5d276ea31c23d4f9eef3b43378078a, type: 3}
 --- !u!1001 &1585330420
