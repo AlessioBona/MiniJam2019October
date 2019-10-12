@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class GroundCheck : MonoBehaviour
 {
-
-    public bool canJump;
+    public bool canJump { private set; get; }
      
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Platform")

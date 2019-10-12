@@ -13,33 +13,19 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private GroundCheck groundCheck;
 
-    
-
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
     }
 
-   
     void Update()
     {
+        //modify player's rigidbody velocity on the x-axis to move him right or left
+        float velX = Input.GetAxis("Horizontal") * moveSpeed;
+        this._rigidbody.velocity = new Vector2(velX, this._rigidbody.velocity.y);
 
-        playerVelocity = Input.GetAxis("Horizontal") * moveSpeed;
-        moveVector = new Vector2(playerVelocity, 0.0f);
-
-        this._rigidbody.velocity = moveVector;
-
+        //check whether the player is on the ground and whether the jump key is pressed to update the player's velocity on the y-axis (= jump)
         if (Input.GetKeyDown(KeyCode.Space) && groundCheck.canJump)
-        {
-            this._rigidbody.velocity += new Vector2(0f, jumpForce);
-            //groundCheck.canJump = false;
-        }
-
-        //check if there is contact with the platform
-
-    
-
-
+            this._rigidbody.velocity = new Vector2(this._rigidbody.velocity.x, jumpForce);
     }
-    
 }
