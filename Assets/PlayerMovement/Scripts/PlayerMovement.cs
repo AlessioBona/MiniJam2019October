@@ -10,13 +10,10 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveVector;
     [SerializeField] private float moveSpeed = 1;
     public void UpdateSpeed (float value) { moveSpeed += value; }
-    private float velX;
+    private float playerVelocity;
 
     [SerializeField] private float jumpForce;
     public void UpdateJumpForce (float value) { jumpForce += value; }
-
-    private int inversionValue = 1;
-    public void Invert() { inversionValue *= -1; }
 
     [SerializeField] private GroundCheck groundCheck;
 
@@ -35,7 +32,8 @@ public class PlayerMovement : MonoBehaviour
             case CloneState.active:
 
                 //modify player's rigidbody velocity on the x-axis to move him right or left
-                velX = Input.GetAxis("Horizontal") * moveSpeed * inversionValue;
+                float velX = Input.GetAxis("Horizontal") * moveSpeed;
+                this._rigidbody.velocity = new Vector2(velX, this._rigidbody.velocity.y);
 
                 //check whether the player is on the ground and whether the jump key is pressed to update the player's velocity on the y-axis (= jump)
                 if (Input.GetKeyDown(KeyCode.Space) && groundCheck.canJump)
@@ -45,21 +43,8 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
-    {
-        this._rigidbody.velocity = new Vector2(velX, this._rigidbody.velocity.y);
-        
-    }
-
     public void UpdateState (CloneState newState)
     {
         state = newState;
-
-        switch(state)
-        {
-            case CloneState.dead:
-                velX = 0.0f;
-                break;
-        }
     }
 }

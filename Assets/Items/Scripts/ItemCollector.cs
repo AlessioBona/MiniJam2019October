@@ -19,7 +19,7 @@ public class ItemCollector : MonoBehaviour
             //depending on the item type
             switch (nextItem.GetItemType())
             {
-                case Item.Type.dna:
+                case Item.Type.clone:
                     break;
 
                 case Item.Type.speedUp:
@@ -29,19 +29,16 @@ public class ItemCollector : MonoBehaviour
                 case Item.Type.jumpBuff:
                     playerMvt.UpdateJumpForce(nextItem.GetValue());
                     break;
-
-                case Item.Type.invertMvt:
-                    playerMvt.Invert();
-                    break;
-
-                case Item.Type.trap:
-                    playerMvt.UpdateState(CloneState.dead);
-                    break;
             }
 
+<<<<<<< HEAD
             if (nextItem.CanDestroy())
                 //destroy the item
                 Destroy(nextItem.gameObject);
+=======
+            //destroy the item
+            Destroy(nextItem.gameObject);
+>>>>>>> fe4561ce38f911a8914d114a7c1b78d101a667a8
         }
     }
 }

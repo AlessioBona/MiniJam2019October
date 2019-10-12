@@ -1,6 +1,132 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
 --- !u!114 &-7348106580642921266
+=======
+--- !u!114 &-9068075962555757843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master Bank.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/save 1/Build/Desktop/Master Bank.strings.bank
+  lastModified: 637064907640000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 764
+  Exists: 1
+--- !u!114 &-7675425702196727499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music
+  guid: a8bdab3ad27ef94db34021ce4b953105
+  Banks:
+  - {fileID: -5666754598254188080}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-7235946569540530300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master Bank.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD\save 1\Build\Desktop\Master Bank.strings.bank
+  lastModified: 637064921852498814
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 764
+  Exists: 1
+--- !u!114 &-5990558891200816957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music
+  guid: a8bdab3ad27ef94db34021ce4b953105
+  Banks:
+  - {fileID: -784916908163386432}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-5666754598254188080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Scene1.bank
+  m_EditorClassIdentifier: 
+  Path: /Users/chunhsiangchen/Desktop/MiniJam2019October/FMOD/save 1/Build/Desktop/Scene1.bank
+  lastModified: 637064907640000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1106
+  Exists: 1
+--- !u!114 &-2170472291126066988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Scene1.bank
+  m_EditorClassIdentifier: 
+  Path: /Users/chunhsiangchen/Desktop/MiniJam2019October/FMOD/save 1/Build/Desktop/Scene1.bank
+  lastModified: 637064907640000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1106
+  Exists: 1
+--- !u!114 &-1920821601005424018
+>>>>>>> fe4561ce38f911a8914d114a7c1b78d101a667a8
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12,15 +138,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master Bank.bank
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   Path: C:\Users\GIMS PC\Documents\MiniJam2019October\FMOD\save 1\Build\Desktop\Master
     Bank.bank
   lastModified: 637064921852488855
+=======
+  Path: /Users/chunhsiangchen/Desktop/MiniJam2019October/FMOD/save 1/Build/Desktop/Master
+    Bank.bank
+  lastModified: 637064907640000000
+>>>>>>> fe4561ce38f911a8914d114a7c1b78d101a667a8
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 12474
   Exists: 1
+<<<<<<< HEAD
 --- !u!114 &-3991123305604124703
+=======
+--- !u!114 &-1386943130468651837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music
+  guid: a8bdab3ad27ef94db34021ce4b953105
+  Banks:
+  - {fileID: -2170472291126066988}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-784916908163386432
+>>>>>>> fe4561ce38f911a8914d114a7c1b78d101a667a8
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -51,8 +210,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master Bank.strings.bank
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   Path: FMOD\save 1\Build\Desktop\Master Bank.strings.bank
   lastModified: 637064921852498814
+=======
+  Path: /Users/chunhsiangchen/Desktop/MiniJam2019October/FMOD/save 1/Build/Desktop/Master
+    Bank.bank
+  lastModified: 637064907640000000
+>>>>>>> fe4561ce38f911a8914d114a7c1b78d101a667a8
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -71,6 +236,7 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
+<<<<<<< HEAD
   - {fileID: -1711252950971507318}
   - {fileID: -3991123305604124703}
   - {fileID: -7348106580642921266}
@@ -83,6 +249,59 @@ MonoBehaviour:
   stringsBankWriteTime: 637064921852498814
   cacheVersion: 3
 --- !u!114 &3476168273821377825
+=======
+  - {fileID: -7235946569540530300}
+  - {fileID: 3532837544185919600}
+  - {fileID: 7616169038399434792}
+  EditorEvents:
+  - {fileID: 6016404763436668874}
+  MasterBanks:
+  - {fileID: 7616169038399434792}
+  StringsBanks:
+  - {fileID: -7235946569540530300}
+  stringsBankWriteTime: 637064921852498814
+  cacheVersion: 3
+--- !u!114 &1516995579183276780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master Bank.bank
+  m_EditorClassIdentifier: 
+  Path: /Users/chunhsiangchen/Desktop/MiniJam2019October/FMOD/save 1/Build/Desktop/Master
+    Bank.bank
+  lastModified: 637064907640000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 12474
+  Exists: 1
+--- !u!114 &3532837544185919600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Scene1.bank
+  m_EditorClassIdentifier: 
+  Path: C:\Users\GIMS PC\Documents\MiniJam2019October\FMOD\save 1\Build\Desktop\Scene1.bank
+  lastModified: 637064921852518773
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1106
+  Exists: 1
+--- !u!114 &6016404763436668874
+>>>>>>> fe4561ce38f911a8914d114a7c1b78d101a667a8
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,7 +316,11 @@ MonoBehaviour:
   Path: event:/Music
   guid: a8bdab3ad27ef94db34021ce4b953105
   Banks:
+<<<<<<< HEAD
   - {fileID: -3991123305604124703}
+=======
+  - {fileID: 3532837544185919600}
+>>>>>>> fe4561ce38f911a8914d114a7c1b78d101a667a8
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -105,3 +328,64 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+<<<<<<< HEAD
+=======
+--- !u!114 &7616169038399434792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master Bank.bank
+  m_EditorClassIdentifier: 
+  Path: C:\Users\GIMS PC\Documents\MiniJam2019October\FMOD\save 1\Build\Desktop\Master
+    Bank.bank
+  lastModified: 637064921852488855
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 12474
+  Exists: 1
+--- !u!114 &8453899136283505680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master Bank.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/save 1/Build/Desktop/Master Bank.strings.bank
+  lastModified: 637064907640000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 764
+  Exists: 1
+--- !u!114 &8593238576615512957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master Bank.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/save 1/Build/Desktop/Master Bank.strings.bank
+  lastModified: 637064907640000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 764
+  Exists: 1
+>>>>>>> fe4561ce38f911a8914d114a7c1b78d101a667a8
