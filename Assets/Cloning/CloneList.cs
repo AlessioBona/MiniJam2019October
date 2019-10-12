@@ -8,10 +8,10 @@ public class CloneList : MonoBehaviour
     [SerializeField] public static CloneList Instance;
 
     [SerializeField] private List<Transform> cloneTransfromListX = new List<Transform>();
-    [SerializeField] private List<Transform> cloneTransfromListY = new List<Transform>();
+    //[SerializeField] private List<Transform> cloneTransfromListY = new List<Transform>();
 
     public List<Transform> CloneTransfromListX { get => cloneTransfromListX; set => cloneTransfromListX = value; }
-    public List<Transform> CloneTransfromListY { get => cloneTransfromListY; set => cloneTransfromListY = value; }
+    //public List<Transform> CloneTransfromListY { get => cloneTransfromListY; set => cloneTransfromListY = value; }
 
     private void Awake()
     {
@@ -21,7 +21,7 @@ public class CloneList : MonoBehaviour
     public void AddClone(Transform _transform)
     {
         CloneTransfromListX.Add(_transform);
-        CloneTransfromListY.Add(_transform);
+        //CloneTransfromListY.Add(_transform);
 
         SortedList();
     }
@@ -29,7 +29,7 @@ public class CloneList : MonoBehaviour
     public void RemoveClone(Transform _transform)
     {
         CloneTransfromListX.Remove(_transform);
-        CloneTransfromListY.Remove(_transform);
+        //CloneTransfromListY.Remove(_transform);
 
         SortedList();
     }
@@ -37,6 +37,6 @@ public class CloneList : MonoBehaviour
     private void SortedList()
     {
         cloneTransfromListX.OrderBy(x => x.position.x);
-        cloneTransfromListY.OrderBy(x => x.position.y);
+        //cloneTransfromListY.OrderBy(x => x.position.y);
     }
 }

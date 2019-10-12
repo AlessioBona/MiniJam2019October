@@ -25,6 +25,11 @@ public class CameraFollow : MonoBehaviour
 
     private float startZ;
 
+    [SerializeField] private float[] zoomSteps;
+    [SerializeField] private float[] distanceSteps;
+
+    private float curDistance;
+
     private void Awake()
     {
         thisTransform = GetComponent<Transform>();
@@ -36,6 +41,8 @@ public class CameraFollow : MonoBehaviour
         cloneList = CloneList.Instance;
     }
 
+    [SerializeField] float distanceX;
+    [SerializeField] float distanceY;
     private void FixedUpdate()
     {
         if (!cloneList)
@@ -48,12 +55,32 @@ public class CameraFollow : MonoBehaviour
         float mostLeft = cloneList.CloneTransfromListX[0].position.x;
         float mostRight = cloneList.CloneTransfromListX[cloneList.CloneTransfromListX.Count - 1].position.x;
 
-        float mostTop = cloneList.CloneTransfromListY[0].position.y;
-        float mostBottom = cloneList.CloneTransfromListY[cloneList.CloneTransfromListX.Count - 1].position.y;
+        //float mostTop = cloneList.CloneTransfromListY[0].position.y;
+        //float mostBottom = cloneList.CloneTransfromListY[cloneList.CloneTransfromListX.Count - 1].position.y;
 
+        distanceX = Mathf.Abs(mostLeft - mostRight);
+        //distanceY = Mathf.Abs(mostTop - mostBottom);
+
+        //curDistance = Mathf.Max(distanceX, distanceY);
+
+        for (int i = 0; i < distanceSteps.Length; i++)
+        {
+            if (i == distanceSteps.Length - 2)
+            {
+                cam.orthographicSize = zoomSteps[i];
+                break;
+            }
+
+            if (distanceX < distanceSteps[i + i])
+            {
+                cam.orthographicSize = zoomSteps[i];
+                break;
+            }
+
+        }
 
         centerPosition.x = (mostLeft + mostRight) / 2;
-        centerPosition.y = (mostTop + mostBottom) / 2;
+        //centerPosition.y = (mostTop + mostBottom) / 2;
 
         centerPosition.z = startZ;
 
@@ -64,5 +91,10 @@ public class CameraFollow : MonoBehaviour
             thisTransform.position,
             targetPosition,
             ref mvtVelocity, mvtSmoothTime);
+    }
+
+    public void CalculateSize()
+    {
+
     }
 }
