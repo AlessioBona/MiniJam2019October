@@ -43,12 +43,22 @@ public class LevelSelector : MonoBehaviour
 
     public void UpdateLevelSelector()
     {
+        if(buttonsList != null)
+        {
+            if(buttonsList.Count > 0)
+            {
+                foreach (var button in buttonsList)
+                {
+                    Object.Destroy(button);
+                }
+            }
+        }
         buttonsList = new List<GameObject>();
         for (int i = 0; i < scenesNames.Count; i++)
         {
             GameObject newButton = Instantiate(levelButtonPrefab, buttonsParent.transform);
             newButton.GetComponent<LevelSelectButton>().sceneName = scenesNames[i];
-            newButton.GetComponent<LevelSelectButton>().buttonLabel.text = $"{i + 1} - {scenesNames[i]}";
+            newButton.GetComponent<LevelSelectButton>().buttonLabel.text = $"{i + 1} - {levelsNames[i]}";
             newButton.GetComponentInChildren<Button>().onClick.AddListener(newButton.GetComponent<LevelSelectButton>().LoadTheScene);
             newButton.GetComponentInChildren<Button>().onClick.AddListener(CloseLevelSelect);
         }
