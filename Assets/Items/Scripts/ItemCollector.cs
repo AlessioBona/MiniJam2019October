@@ -30,10 +30,19 @@ public class ItemCollector : MonoBehaviour
                 case Item.Type.jumpBuff:
                     playerMvt.UpdateJumpForce(nextItem.GetValue());
                     break;
+
+                case Item.Type.invertMvt:
+                    playerMvt.Invert();
+                    break;
+
+                case Item.Type.trap:
+                    playerMvt.UpdateState(CloneState.dead);
+                    break;
             }
 
-            //destroy the item
-            Destroy(nextItem.gameObject);
+            if(nextItem.CanDestroy())
+                //destroy the item
+                Destroy(nextItem.gameObject);
         }
     }
 }
