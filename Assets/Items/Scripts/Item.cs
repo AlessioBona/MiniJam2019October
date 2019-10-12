@@ -19,4 +19,8 @@ public class Item : MonoBehaviour
     [SerializeField]
     private bool destroy = true;
     public bool CanDestroy () { return destroy; }
+
+    [SerializeField]
+    private AudioClip audioClip = null;
+    public AudioClip GetAudioClip () { return audioClip; }
 }

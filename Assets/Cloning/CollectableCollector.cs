@@ -6,6 +6,8 @@ public class CollectableCollector : MonoBehaviour
 
     [SerializeField] private Clone clone;
 
+    [SerializeField] private AudioClip collectAudio;
+
     private void Awake()
     {
         enterTriggerManager.onTriggerEnter += DoOnTriggerEnter2D;
@@ -18,6 +20,7 @@ public class CollectableCollector : MonoBehaviour
         if (collectable)
         {
             collectable.OnCollect(clone);
+            GetComponent<AudioSource>().PlayOneShot(collectAudio);
         }
     }
 }

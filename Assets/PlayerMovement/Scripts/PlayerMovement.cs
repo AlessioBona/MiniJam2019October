@@ -26,6 +26,8 @@ public class PlayerMovement : MonoBehaviour
     private AudioSource audioSource;
     [SerializeField]
     private AudioClip jumpAudio = null;
+    [SerializeField]
+    private AudioClip deathAudio = null;
 
     void Start()
     {
@@ -69,6 +71,7 @@ public class PlayerMovement : MonoBehaviour
         {
             case CloneState.dead:
                 velX = 0.0f;
+                audioSource.PlayOneShot(deathAudio);
                 GetComponent<Clone>().enabled = false;
                 GetComponent<ItemCollector>().enabled = false;
                 enabled = false;
